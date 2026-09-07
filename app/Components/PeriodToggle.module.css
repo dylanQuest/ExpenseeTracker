@@ -1,0 +1,36 @@
+.toggle {
+  display: flex;
+  border: 1px solid var(--color-surface-border);
+  border-radius: 999px;
+  overflow: hidden;
+  background: hsl(0deg 0% 100% / 8%);
+  margin: 1.5em 0;
+}
+
+.option {
+  flex: 1;
+  position: relative;
+  text-align: center;
+}
+
+.input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.label {
+  display: block;
+  padding: 0.6em 0;
+  font-size: 90%;
+  color: var(--color-text-on-surface);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.input:checked + .label {
+  background-color: var(--color-melon);
+  color: hsl(255deg 45% 22%);
+  font-weight: 600;
+}

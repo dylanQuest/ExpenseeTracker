@@ -1,0 +1,125 @@
+:root {
+  --color-bg: linear-gradient(
+    120deg,
+    hsl(235deg 66% 54%) 0%,
+    hsl(244deg 68% 64%) 9%,
+    hsl(249deg 72% 72%) 18%,
+    hsl(252deg 80% 79%) 27%,
+    hsl(269deg 75% 83%) 36%,
+    hsl(318deg 67% 81%) 45%,
+    hsl(344deg 90% 83%) 54%,
+    hsl(5deg 87% 82%) 63%,
+    hsl(3deg 71% 77%) 73%,
+    hsl(348deg 58% 68%) 82%,
+    hsl(333deg 47% 59%) 91%,
+    hsl(315deg 37% 48%) 100%
+  );
+  --color-button: #f8718e;
+  --color-button-hover: #f76b8a;
+  --color-text: #1e293b;
+  --color-text-muted: #4b5f5a;
+
+  --color-indigo: hsl(235deg 66% 54%);   /* 0% - deep blue/indigo */
+  --color-periwinkle: hsl(249deg 72% 72%); /* 18% - soft blue-purple */
+  --color-lavender: hsl(269deg 75% 83%);  /* 36% - pale lilac */
+  --color-orchid: hsl(318deg 67% 81%);    /* 45% - pink-purple */
+  --color-melon: hsl(344deg 90% 83%);     /* 54% - your existing pink/melon, matches Form.module.css */
+  --color-coral: hsl(5deg 87% 82%);       /* 63% - warm coral */
+  --color-rose: hsl(348deg 58% 68%);      /* 82% - muted rose */
+  --color-plum: hsl(315deg 37% 48%);      /* 100% - deep plum */
+
+/* dark glass surface, sourced from the gradient's own deep end */
+--color-surface: hsl(255deg 40% 32% / 50%);
+--color-surface-hover: hsl(255deg 40% 36% / 55%);
+--color-surface-border: hsl(0deg 0% 100% / 15%);
+--color-surface-shadow: hsl(280deg 45% 15% / 20%);
+
+  /* text specifically for content sitting on top of the dark glass surface */
+  --color-text-on-surface: hsl(0deg 0% 100% / 95%);
+  --color-text-on-surface-muted: hsl(0deg 0% 100% / 65%);
+
+  /* card now uses the real glass surface instead of a transparent placeholder */
+  --color-card: var(--color-surface);
+  --gradient-brand: var(--color-bg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  color: var(--color-text);
+  background: var(--color-bg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: underline;
+  text-decoration-color: var(--color-button);
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: var(--color-button-hover);
+}
+
+button {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--color-button);
+  color: var(--color-text);
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  transition: background 0.15s ease;
+}
+
+button:hover {
+  background: var(--color-button-hover);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 0.5rem;
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--color-card);
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+  border: 1px solid var(--color-surface-border);
+  box-shadow: 0 8px 32px var(--color-surface-shadow);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem;
+  min-height: 85vh;
+  color: var(--color-text-on-surface);
+}
+
+.formError {
+  color: hsl(0deg 90% 75%);
+  font-size: 85%;
+  margin: -0.5em 0 0;
+}

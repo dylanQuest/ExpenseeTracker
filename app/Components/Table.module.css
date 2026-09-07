@@ -1,0 +1,33 @@
+/* ~/Components/Table.module.css */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.headerCell {
+  text-align: left;
+  font-size: 80%;
+  text-transform: uppercase;
+  color: gray;
+  padding: 0.5em;
+  border-bottom: 1px solid gray;
+}
+
+.cell {
+  padding: 0.5em;
+  border-bottom: 1px solid lightgray;
+}
+
+.row:last-child .cell {
+  border-bottom: 0;
+}
+
+.categoryBubble {
+  display: inline-block;
+  padding: 0.25em 0.9em;
+  border-radius: 999px;
+  font-size: 85%;
+  font-weight: 600;
+  color: white;
+  background-color: var(--category-color);
+}

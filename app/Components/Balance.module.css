@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3em 1em;
+  border: 1px solid var(--color-surface-border);
+  border-radius: 0.75rem;
+  background: var(--color-surface-glass);
+  box-shadow: var(--shadow-surface);
+  backdrop-filter: blur(14px);
+  color: var(--color-text-on-surface);
+}
+
+
+.heading {
+  margin: 0;
+  color: var(--color-text-on-surface);
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.amount {
+  width: 75%;
+  margin-top: 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-text-on-surface);
+  font-size: 200%;
+  text-align: center;
+}

@@ -1,0 +1,8 @@
+
+> build
+> remix build
+
+[7m[34m info [39m[27m building...[90m (NODE_ENV=production)[39m
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCannot read properties of undefined (reading 'filter')[0m [1m[35m[plugin browser-route-module][0m
+
+

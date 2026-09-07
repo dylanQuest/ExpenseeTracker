@@ -1,0 +1,293 @@
+.insight {
+  min-width: 0;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--color-surface-border);
+  border-radius: 1em;
+  background: hsl(0deg 0% 100% / 3%);
+  color: var(--color-text-on-surface);
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.header h2 {
+  margin: 0.2rem 0 0;
+  color: var(--color-text-on-surface);
+  font-size: 1.1rem;
+}
+
+.eyebrow,
+.smallLabel {
+  margin: 0;
+  color: var(--color-text-on-surface-muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.smallLabel {
+  border: 1px solid var(--color-surface-border);
+  border-radius: 999px;
+  background: hsl(0deg 0% 100% / 8%);
+  padding: 0.4rem 0.65rem;
+  letter-spacing: 0.03em;
+  text-transform: none;
+}
+
+.emptyMessage {
+  margin: 2rem 0;
+  color: var(--color-text-on-surface-muted);
+  text-align: center;
+}
+
+.budgetLayout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.ring {
+  display: grid;
+  width: 150px;
+  height: 150px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px hsl(280deg 45% 15% / 28%);
+  transform: rotate(-90deg);
+}
+
+.ringCenter {
+  display: flex;
+  width: 116px;
+  height: 116px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-surface-border);
+  border-radius: 50%;
+  background: hsl(255deg 40% 27% / 85%);
+  box-shadow: inset 0 1px 0 hsl(0deg 0% 100% / 12%);
+  transform: rotate(90deg);
+}
+
+.ringCenter strong {
+  color: var(--color-text-on-surface);
+  font-size: 1.65rem;
+  line-height: 1;
+}
+
+.ringCenter span {
+  margin-top: 0.35rem;
+  color: var(--color-text-on-surface-muted);
+  font-size: 0.78rem;
+}
+
+.budgetDetails {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.budgetSpent,
+.remaining,
+.overBudget,
+.budgetTotal {
+  margin: 0;
+}
+
+.budgetSpent {
+  color: var(--color-text-on-surface);
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.budgetSpent span {
+  color: var(--color-text-on-surface-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.remaining {
+  color: #b8f5c5;
+  font-weight: 700;
+}
+
+.overBudget {
+  color: #ffb1c0;
+  font-weight: 700;
+}
+
+.budgetTotal {
+  color: var(--color-text-on-surface-muted);
+  font-size: 0.85rem;
+}
+
+.lollipopList {
+  display: grid;
+  gap: 1rem;
+}
+
+.lollipopRow {
+  display: grid;
+  grid-template-columns: minmax(90px, 1.1fr) minmax(80px, 2fr) auto;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.expenseMeta {
+  display: grid;
+  min-width: 0;
+  gap: 0.15rem;
+}
+
+.expenseMeta strong {
+  overflow: hidden;
+  color: var(--color-text-on-surface);
+  font-size: 0.9rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.expenseMeta span {
+  overflow: hidden;
+  color: var(--color-text-on-surface-muted);
+  font-size: 0.76rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.lollipopTrack {
+  display: flex;
+  align-items: center;
+  height: 22px;
+  border-radius: 999px;
+  background: hsl(0deg 0% 100% / 8%);
+}
+
+.lollipopStem {
+  position: relative;
+  height: 3px;
+  border-radius: 999px;
+}
+
+.lollipopDot {
+  position: absolute;
+  top: 50%;
+  right: -7px;
+  width: 14px;
+  height: 14px;
+  border: 3px solid hsl(255deg 40% 29%);
+  border-radius: 50%;
+  box-shadow: 0 1px 8px hsl(280deg 45% 15% / 45%);
+  transform: translateY(-50%);
+}
+
+.expenseAmount {
+  color: var(--color-text-on-surface);
+  font-size: 0.82rem;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.heatmapScroll {
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+}
+
+.heatmapScroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.heatmapScroll::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: hsl(0deg 0% 100% / 24%);
+}
+
+.heatmap {
+  display: grid;
+  min-width: 620px;
+  gap: 0.45rem;
+  align-items: center;
+}
+
+.heatmapCorner {
+  height: 2rem;
+}
+
+.heatmapColumnLabel {
+  color: var(--color-text-on-surface-muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.heatmapRowLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  overflow: hidden;
+  color: var(--color-text-on-surface);
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.categoryDot {
+  width: 9px;
+  height: 9px;
+  flex: 0 0 auto;
+  border: 1px solid hsl(0deg 0% 100% / 35%);
+  border-radius: 50%;
+}
+
+.heatmapCell {
+  display: flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid hsl(0deg 0% 100% / 9%);
+  border-radius: 9px;
+  color: hsl(0deg 0% 100% / 92%);
+  cursor: default;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-shadow: 0 1px 4px hsl(280deg 45% 15% / 45%);
+  transition: transform 0.15s ease, box-shadow 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.heatmapCell:hover {
+  position: relative;
+  z-index: 1;
+  border-color: hsl(0deg 0% 100% / 40%);
+  box-shadow: 0 6px 18px hsl(280deg 45% 15% / 35%);
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .budgetLayout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .lollipopRow {
+    grid-template-columns: minmax(76px, 1fr) minmax(60px, 1fr) auto;
+    gap: 0.55rem;
+  }
+
+  .expenseAmount {
+    font-size: 0.72rem;
+  }
+
+  .smallLabel {
+    display: none;
+  }
+}

@@ -1,0 +1,167 @@
+.historyPanel {
+  width: min(100%, 42rem);
+  margin: 2rem auto;
+  padding: 1.25rem;
+  border: 1px solid var(--color-surface-border);
+  border-radius: 0.75rem;
+  background: var(--color-surface-glass);
+  box-shadow: var(--shadow-surface);
+  backdrop-filter: blur(14px);
+}
+
+.historyHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.historyLabel {
+  margin: 0;
+  color: var(--color-text-on-surface-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.totalIncome {
+  margin: 0.25rem 0 0;
+  color: var(--color-text-on-surface);
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.entryCount {
+  color: var(--color-text-on-surface-muted);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.historyDivider {
+  height: 1px;
+  margin: 1rem 0 0.25rem;
+  background: var(--color-surface-border);
+}
+
+.historyList {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.historyItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--color-surface-border);
+}
+
+.historyItem:last-child {
+  border-bottom: 0;
+}
+
+.incomeAmount {
+  margin: 0;
+  color: var(--color-text-on-surface);
+  font-weight: 700;
+}
+
+.incomeDate {
+  margin: 0.15rem 0 0;
+  color: var(--color-text-on-surface-muted);
+  font-size: 0.82rem;
+}
+
+.deleteForm {
+  margin: 0;
+}
+
+.deleteButton {
+  border: 0;
+  border-radius: 0.35rem;
+  background: transparent;
+  color: var(--color-text-on-surface-muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.8rem;
+  padding: 0.35rem 0.45rem;
+}
+
+.deleteButton:hover {
+  background: color-mix(
+    in srgb,
+    var(--color-melon) 25%,
+    transparent
+  );
+  color: var(--color-text-on-surface);
+}
+
+.emptyState {
+  margin: 1rem 0 0;
+  color: var(--color-text-on-surface-muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  .historyPanel {
+    padding: 1rem;
+  }
+
+  .totalIncome {
+    font-size: 1.35rem;
+  }
+}
+
+.pageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+}
+
+.exportLink {
+  font-size: 90%;
+  color: var(--color-text-on-surface);
+  text-decoration: underline;
+  text-decoration-color: var(--color-melon);
+  text-underline-offset: 2px;
+}
+
+.importForm {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.fileInput {
+  max-width: 140px;
+  font-size: 80%;
+  color: var(--color-text-on-surface);
+}
+
+.importButton {
+  background: transparent;
+  border: 1px solid var(--color-surface-border);
+  border-radius: 0.5em;
+  padding: 0.35em 0.8em;
+  font-size: 85%;
+  color: var(--color-text-on-surface);
+  cursor: pointer;
+}
+
+.importButton:hover {
+  background-color: var(--color-melon);
+  color: hsl(255deg 45% 22%);
+}
